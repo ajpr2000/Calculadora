@@ -15,7 +15,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 50px auto;
+    padding: 0 10px;
 }
 
 .info h1{
