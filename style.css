@@ -123,6 +123,7 @@ body {
 @media (max-width: 720px) {
     .calculadora{
         width: 300px;
+        margin: 20px;
     }
     
     .boton{
