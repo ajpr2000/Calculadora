@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#f8a711, #3e6bb9);
+}
+
+.info{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.info h1{
+    font-style: bold;
+}
+
+.calculadora {
+    background-color: #797979;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    margin: 50px;
+
+}
+
+.pantalla {
+    grid-column: 1 / 5;
+    background-color: #222330;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #111111;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #3d3d3d;
+    font-weight: bold;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #397f81;
+}
+
+#igual:hover {
+    background-color:  #2d6568;
+}
+
+.body-historial{
+    display: block
+}
+
+.body-historial h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.historial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 0 0 40px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    color: white;
+    font-size: 1rem;
+}
+.historial p {
+    margin: 5px 0;
+}
+
+#borrarHistorial {
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#borrarHistorial:hover {
+    background-color: #ff3b3b;
+}
+
+
+
+@media (max-width: 720px) {
+    .calculadora{
+        width: 300px;
+    }
+    
+    .boton{
+        padding: 1rem .5rem;
+    }
+
+    .body-historial {
+        padding: 0 25px;
+    }
+
+}
